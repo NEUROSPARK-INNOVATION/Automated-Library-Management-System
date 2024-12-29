@@ -1,0 +1,40 @@
+# Ignore the Arduino build folder and temporary files
+*.log
+*.bak
+*.swp
+*.swo
+build/
+*.ino~ 
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore environment variables and sensitive information
+.env
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+
+# Ignore operating system-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Ignore test coverage reports (if you use testing tools)
+coverage/
+
+# Ignore compiled files from TypeScript (if applicable)
+*.tsbuildinfo
+
+# Ignore NPM debug log
+npm-debug.log*
+
+# Ignore yarn lock file (optional, depending on the package manager you're using)
+yarn-debug.log
+yarn-error.log
+
+# Ignore any other generated files (optional)
+dist/
+temp/
+*.tgz
+*.zip
