@@ -174,7 +174,8 @@ In the backend folder, open the config.js (or similar) file and configure your M
     The backend API should now be available at http://localhost:5000 (or the configured URL).
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/your-username/your-repo-name/blob/main/LICENSE) file for details.
+
 
 REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASE ON **NEUROVERSE** - *NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........)*.
 THANK YOU.
