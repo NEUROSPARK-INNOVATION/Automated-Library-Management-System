@@ -174,7 +174,8 @@ In the backend folder, open the config.js (or similar) file and configure your M
     The backend API should now be available at http://localhost:5000 (or the configured URL).
 
 
+REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASE ON **NEUROVERSE** - *NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........)*.
+THANK YOU.
+RADHE RADHE 🙏🙏
+HARE KRISHNA🙏🙏
 
-    REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASE ON NEUROVERSE - NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........).
-    THANK YOU.
-    RADHE RADHE 🙏🙏🙏🙏
