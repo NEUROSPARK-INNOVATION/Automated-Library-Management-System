@@ -90,47 +90,6 @@ Follow the instructions to set up the hardware components for the **Automated Li
 
 ---
 
-### 2. Software Setup
-
-#### A. Frontend Setup (Web Interface)
-
-1. **Clone the Frontend Repository**:  
-   Clone the frontend repository from GitHub:
-   ```bash
-   git clone https://github.com/your-username/frontend.git
-2.  ## Installation
-
-### 1. Hardware Setup
-
-Follow the instructions to set up the hardware components for the **Automated Library Management System**:
-
-1. **ESP32 Setup**:  
-   - Ensure you have an **ESP32** development board.
-   - Connect the following hardware components to the ESP32:
-
-     - **MFRC522 RFID Reader**:
-       - **SDA** → **GPIO5**
-       - **SCK** → **GPIO18**
-       - **MOSI** → **GPIO23**
-       - **MISO** → **GPIO19**
-       - **RST** → **GPIO22**
-
-     - **QR Code Scanner**:
-       - **TX** → **GPIO17** (or any other RX pin)
-       - **RX** → **GPIO16** (or any other TX pin)
-     
-     - **Solenoid Lock**:
-       - Connect the solenoid lock to a relay or directly to **GPIO23** on the ESP32 for controlling the door lock.
-     
-     - **LCD Display** (Optional):
-       - Connect the LCD to the **I2C interface** on the ESP32:
-         - **SDA** → **GPIO21**
-         - **SCL** → **GPIO22**
-
-2. **Connect the ESP32 to Your Computer**:  
-   Connect the **ESP32** to your computer using a USB cable.
-
----
 
 ### 2. Software Setup
 
@@ -176,6 +135,7 @@ In the backend folder, open the config.js (or similar) file and configure your M
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/NEUROSPARK-INNOVATION/Automated-Library-Management-System/blob/main/LICENSE.txt) file for details.
 
+---
 
 REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASED ON **NEUROVERSE** - *NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........)*.
 THANK YOU.
