@@ -177,7 +177,7 @@ In the backend folder, open the config.js (or similar) file and configure your M
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/NEUROSPARK-INNOVATION/Automated-Library-Management-System/blob/main/LICENSE.txt) file for details.
 
 
-REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASE ON **NEUROVERSE** - *NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........)*.
+REST OF THE DETAILS ABOUT THE PROJECT WILL BE SHOWCASED ON **NEUROVERSE** - *NEUROSPARKS'S OWN WEBSITE(COMMING SOON.........)*.
 THANK YOU.
 RADHE RADHE 🙏🙏
 HARE KRISHNA🙏🙏
