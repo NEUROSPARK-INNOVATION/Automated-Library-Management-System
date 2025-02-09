@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Event Page</title>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Announce Events</h1>
+            <p>Fill this form to add Events.</p>
+        </div>
+
+        <form class="add-product-form" id="addProductForm">
+            <div class="form-group">
+                <label for="bookHeading">Heading</label>
+                <input type="text" id="bookHeading" required>
+            </div>
+             <div class="form-group">
+                <label for="bookDate">Date<input type="date" id="bookDate" name="date" required> </label>
+            </div> 
+            <div class="form-group">
+                <label for="bookCategory">Category</label>
+                <input type="text" id="bookCategory" required>
+            </div> 
+            <div class="form-group">
+                <label for="bookdescription">Description</label>
+                <input type="text" id="bookdescription" placeholder="Describe the event in 80 words" required>
+            </div> 
+            <div class="form-group">
+                <label for="bookImage"> Event Image URL</label>
+                <input type="text" id="bookImage" required>
+            </div>
+            <button type="submit" class="submit-btn">Add Event</button>
+        </form>
+        <div class="products-grid" id="productsGrid">
+           <!-- Card 1 -->
+            <article class="card">
+                <div class="card-image-container">
+                    <img src="/assets/events/author-talk.jpg" alt="Author" class="card-image">
+                    <div class="date-badge">
+                        <span>15</span>
+                        Feb
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="category">SEMINAR</div>
+                    <h2 class="card-title">Author Spotlight: Meet the Writer</h2>
+                    <div class="meta">
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Feb 15, 2025
+                        </div>
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Admin
+                        </div>
+                    </div>
+                    <p class="card-text" minlength="35">Get up close with your favorite authors at our Author Spotlight event! Hear their stories, ask questions, and get your books signed. This month's featured author: Dr. Abhijit Mallick.
+                    </p>
+                    <a href="#" class="read-more read-more-btn">Read More...</a>
+                </div>
+            </article>
+               <!-- Card 2 -->
+        <article class="card">
+            <div class="card-image-container">
+                <img src="/assets/events/Read-a-thon.jpg" alt="Read-a-thon" class="card-image">
+                <div class="date-badge">
+                    <span>2</span>
+                    Feb
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="category">GROUP DISCUSSION</div>
+                <h2 class="card-title">Read-a-Thon: Unlock the World of Books</h2>
+                <div class="meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Feb 2, 2025
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Admin
+                    </div>
+                </div>
+                <p class="card-text">Join us for an exciting Read-a-Thon, where book lovers come together to share stories, participate in reading challenges, and discover hidden gems in our collection. Perfect for readers of all ages!</p>
+                <a href="#" class="read-more">Read More...</a>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+            <div class="card-image-container">
+                <img src="/assets/events/cinema.jpg" alt="Cinema" class="card-image">
+                <div class="date-badge">
+                    <span>31</span>
+                    Jan
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="category">WORKSHOP</div>
+                <h2 class="card-title">From Pages to Screen: Movie Adaptation Marathon</h2>
+                <div class="meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Jan 31, 2025
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Admin
+                    </div>
+                </div>
+                <p class="card-text">Experience the magic of books brought to life on screen! Join us for a movie marathon featuring adaptations of classic and modern novels.</p>
+                <a href="#" class="read-more">Read More...</a>
+            </div>
+        </article>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>

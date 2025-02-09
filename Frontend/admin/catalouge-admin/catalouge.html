@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Catalouge Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Our Offerings</h1>
+            <p>Here you can check out our new arrivals.</p>
+        </div>
+
+        <form class="add-product-form" id="addProductForm">
+            <div class="form-group">
+                <label for="productTitle">Book Title</label>
+                <input type="text" id="productTitle" required>
+            </div>
+             <div class="form-group">
+                <label for="productAuthor">Book Author</label>
+                <input type="text" id="productAuthor" required>
+            </div> 
+            <div class="form-group">
+                <label for="productGenres">Book Genres</label>
+                <input type="text" id="productGenres" required>
+            </div> 
+            <div class="form-group">
+                <label for="productImage"> Book Image URL</label>
+                <input type="text" id="productImage" required>
+            </div>
+            <button type="submit" class="submit-btn">Add Book</button>
+        </form>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Initial products -->
+            <div class="product-card">
+                <img src="/assets/Books/Little_Women.jpg" alt="Sport Boots" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Frankestine</h3>
+                    <p class="product-author">LOUISA MAY ALCOTT</p>
+                </div>
+            </div>
+            <!-- More products will be added dynamically -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+       
+</body>
+</html>

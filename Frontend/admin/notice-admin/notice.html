@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Notice</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Send a Notice</h1>
+        <p>Issue an announcement regarding important information that needs attention</p>
+    </div>
+
+    <form class="add-product-form" id="addProductForm">
+        <div class="form-group">
+            <label for="notice">Notice</label>
+            <input type="text" id="notice" required>
+        </div>
+        <button type="submit" class="submit-btn">Send Notice</button>
+    </form>
+
+    <section class="notice-board" id="notice-section">
+        <h2>Notice Board</h2>
+        <ul id="notice-list">
+            <li>
+                <p>Library will be closed on 24th December for maintenance. We apologize for any inconvenience.</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

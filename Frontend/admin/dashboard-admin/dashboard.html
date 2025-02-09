@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title> Admin Dashboard Page</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5a2.5 2.5 0 010-5H20" stroke-width="2"/>
+            </svg> -->
+            <i class='bx bxs-graduation'></i>
+            AOT Library
+        </a>
+        <input type="search" class="search-bar" placeholder="Search...">
+        <nav class="nav-links">
+            <div class="hover-container">
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="menu-title">Menu</h2>
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-item" href="/admin/charges-admin/charges.html">Charges</li>
+                <li class="menu-item"><a class="menu-item" href="/admin/catalouge-admin/catalouge.html">Add Books</a></li>
+                <li class="menu-item"><a class="menu-item" href="/login/login.html">Add Student</a></li>
+                <script>
+                    window.onload = function() {
+                        document.getElementById('autoClickButton').click();
+                    };
+                </script>
+                <li class="menu-item"><a class="menu-item" href="/admin/notice-admin/notice.html">Send a Notice</a></li>
+                <li class="menu-item"><a class="menu-item" href="/admin/timing-admin/timing.html">Change Timing</a></li>
+                <li class="menu-item"><a class="menu-item" href="/admin/event-admin/event.html">Announce Events</a></li>
+                <li class="menu-item"><a class="menu-item" href="/admin/updateuser-admin/update.html">Update User Data</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+          <!-- Welcome Section -->
+            <section class="welcome">
+                <div class="welcome-text">
+                    <h1>Hello, <span class="highlight">Admin!</span></h1>
+                    <p id="current-date">Jan 12, 2025 | Thursday, 11:00 AM</p>
+                </div>
+            </section>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3 class="visitor-count">1223</h3>
+                        <p>Total Visitors</p>
+                    </div>
+                    <div class="stat-icon pink">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3 id="borrowedBook">740</h3>
+                        <p>Borrowed Books</p>
+                    </div>
+                    <div class="stat-icon pink">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>0</h3>
+                        <p>Overdue Books</p>
+                    </div>
+                    <div class="stat-icon pink">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3 id="user-count">4</h3>
+                        <p>Users</p>
+                    </div>
+                    <div class="stat-icon pink">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lists Section -->
+            <div class="lists-container">
+                <!-- Users List -->
+                <div class="list-card">
+                    <div class="list-header">
+                        <h3>Users List</h3>
+                        <a href="/admin/issue-book/index.html"><button class="add-new">Issue A Book</a></button>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                    <th>User Name</th>
+                                    <th>Book Issued</th>
+                                    <th>Department</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users-table-body">
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Books List -->
+                <div class="list-card">
+                    <div class="list-header">
+                        <h3>Books List</h3>
+                        <a href="/admin/catalouge-admin/catalouge.html"><button class="add-new">Add A Book</a></button>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Book ID</th>
+                                    <th>Book Name</th>
+                                    <th>Book Author</th>
+                                    <th >Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="book-table-body">
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+           
+            <!-- Overdue Books -->
+            <section class="overdue-books">
+                <h3>Overdue Book List</h3>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>User Name</th>
+                                <th>Book ID</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Overdue</th>
+                                <th>Status</th>
+                                <th>Fine</th>
+                            </tr>
+                        </thead>
+                        <tbody id="overdue-table-body">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    <!-- <footer class="footer">
+        <p class="footer-text">Made with <i class='bx bxs-heart'></i> by NEUROSPARK</p>
+        <p class="footer-text">© 2025 AOT Library. All rights reserved.</p>
+    </footer> -->
+</div>
+    <script src="script.js"></script>
+ </body>
+</html>

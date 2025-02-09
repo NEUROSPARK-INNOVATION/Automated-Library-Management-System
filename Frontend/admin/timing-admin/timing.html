@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Timing Update</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Update Timing</h1>
+        <p>Revise the schedule to reflect the new timing accurately.</p>
+    </div>
+
+    <form class="add-product-form" id="addProductForm">
+        <div class="form-group">
+            <label for="day">Select Day</label>
+            <select id="day" required>
+                <option value="" disabled selected>Select a day</option>
+                <option value="monday">Monday - Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="time">New Timing</label>
+            <input type="text" id="time" required placeholder="Enter new timing (e.g., 10:00 AM - 6:00 PM)">
+        </div>
+        <button type="submit" class="submit-btn">Update Timing</button>
+    </form>
+
+    <section class="timing">
+        <h2>Library Hours</h2>
+        <p id="monday-timing">Monday - Friday: 9:00 AM - 8:00 PM</p>
+        <p id="saturday-timing">Saturday: 10:00 AM - 6:00 PM</p>
+        <p id="sunday-timing">Sunday: Closed</p>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+

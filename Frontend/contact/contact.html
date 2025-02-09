@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Form</title>
+</head>
+<body class="content">
+<div class="container">
+    <div class="item">
+        <div class="contact">
+            <div class="first-text">Let's get in touch</div>
+            <img src="/assets/contact-image.jpg" class="image">
+            <div class="social-links">
+                <span class="secnd-text">Connect with us:</span>
+                <ul class="social-media">
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                    <li><a href="#"></a><i class='bx bxl-linkedin'></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="submit-form">
+            <h4 class="third-text">Contact Us</h4>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6dd6ebdf-9c6a-4a3d-9f5b-393a3e86785a">
+
+                <div class="input-box">
+                    <input name="Name" type="text" autocomplete="off" class="input" required>
+                    <label for="">Name</label>
+                </div>
+                <div class="input-box">
+                    <input name="Email" type="email" autocomplete="off" class="input" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <input name="Phone Number" type="number" autocomplete="off" maxlength="10" class="input" required>
+                    <label for="">Phone</label>
+                </div>
+                <div class="input-box">
+                    <textarea name="Message" class="input" autocomplete="off" required id="message"></textarea>
+                    <label for="">Message</label>
+                </div>
+                <input type="hidden" name="redirect" value="https://l7qnljxh-5501.inc1.devtunnels.ms/contact/Thank-You/thank.html">
+                
+                <input type="submit" class="btn" value="Submit">      
+            </form>
+        </div>
+    </div>
+</div> 
+</body>
+</html>

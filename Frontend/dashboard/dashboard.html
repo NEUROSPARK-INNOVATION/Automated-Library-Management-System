@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dashboard/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard Page</title>
+    <!-- <script type="module" src="/login/google login/update.js" defer></script> -->
+    <script type="module" src="/login/Login1.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5a2.5 2.5 0 010-5H20" stroke-width="2"/>
+            </svg>
+            AOT Library
+        </a>
+        <input type="search" class="search-bar" placeholder="Search...">
+        <nav class="nav-links">
+            <a href="/frontpage/home.html">Home</a>
+            <a href="/catalouge/catalouge.html">Catalouge</a>
+            <a href="/event/event.html">Events</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="menu-title">Menu</h2>
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-item" href="#">Summary</a></li>
+                <li class="menu-item"><a class="menu-item" href="#">Charges</li>
+                <li class="menu-item"><a class="menu-item" href="#">Personal Details</a></li>
+                <li class="menu-item"><a class="menu-item" href="/login/login.html">Change Password</a></li>
+                <li class="menu-item"><a class="menu-item" href="/">Checkout History</a></li>
+                <li class="menu-item"><a class="menu-item" href="#">Purchase Suggestions</a></li>
+                <li class="menu-item"><a class="menu-item" href="#">Messaging</a></li>
+                <li class="menu-item"><a class="menu-item" href="#">Lists</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="profile">
+                <img src="/assets/Profile pic.jpg" alt="" id="profilepic" class="profile-image">
+                <div class="profile-info">
+                    <h1>Hello,<h1 id="username">Soumaditya Roy</h1></h1>
+                    <br>
+                    <a href="/login/login.html" id="logoutButton">Log out or switch account</a>
+                </div>
+            </div>
+
+            <section id="borrowedBooksSection" class="books-section">
+                <h2>Checked Out Books</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Due Date</th>
+                            <th>Call Number</th>
+                            <th>Renewal Options</th>
+                            <th>Fines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DRACULA</td>
+                            <td>BRAM STOKER</td>
+                            <td>2024-01-22</td>
+                            <td>823.912 ORW</td>
+                            <td><button class="renew-button">Renew</button></td>
+                            <td class="fines">₹0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>       
+            <div class="bottom-sections">
+                <div class="progress-container">
+                    <section class="progress-section">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <h3>Points Progress</h3>
+                                <span>1200/3000</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <p>Earn More Points</p>
+                        </div>
+                    </section>
+                    <section class="progress-section">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <h3>Committed Reader</h3>
+                                <span>2/3</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 66%"></div>
+                            </div>
+                            <p>3 Day Streak</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">Made with <i class='bx bxs-heart'></i> by NEUROSPARK</p>
+        <p class="footer-text">© 2025 AOT Library. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

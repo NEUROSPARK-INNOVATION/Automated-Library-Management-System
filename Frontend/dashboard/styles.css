@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+:root {
+    --primary: #4F46E5;
+    --primary-light: #818CF8;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+    --bg-sidebar: #F8FAFC;
+    --red: #ef4444;
+}
+
+.header {
+    background: var(--primary);
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo svg {
+    width: 24px;
+    height: 24px;
+}
+
+.search-bar {
+    background: white;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    min-height: calc(100vh - 64px);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: var(--bg-sidebar);
+    padding: 2rem;
+    border-right: 1px solid #e5e7eb;
+}
+
+.menu-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.menu-list a{
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    padding: 0.75rem 0;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: var(--primary);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    display: inline-flex;
+}
+
+.profile-info a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Books Table */
+.books-section {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table th {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.renew-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.fines {
+    color: var(--red);
+}
+
+/* Bottom Sections */
+.bottom-sections {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+/* Progress Section */
+.progress-section {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+.progress-item {
+    margin-bottom: 2rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    width: 40%;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.badge svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+/* update */
+.bottom-sections {
+    display: flex;
+}
+.progress-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.progress-section {
+    flex: 1; 
+    margin: 0 0.5rem; 
+}
+
+.progress-section:first-child {
+    margin-left: 0; 
+}
+
+.progress-section:last-child {
+    margin-right: 0; 
+}
+
+/* footer */
+.footer {
+    background-color: #f8f9fa; 
+    color: #333; 
+    text-align: center;
+    padding: 1.5rem; 
+    font-size: 1rem;
+    margin-top: 2rem; 
+}
+
+.footer-text {
+    margin: 0.5rem 0; 
+    font-family: Arial, sans-serif; 
+}

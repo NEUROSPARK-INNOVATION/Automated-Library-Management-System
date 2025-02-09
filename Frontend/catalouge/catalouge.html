@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalouge Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2>Our Offerings</h2>
+            <p>Explore our collection of books and expand your knowledge!</p>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter">
+        <div class="container" id="filtter">
+            <label for="genre">Filter :</label>
+            <select class="hello" id="genre" onchange="filterBooks()">
+                <option value="all">All</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Book List Section -->
+    <section class="book-list" id="book-list">
+            <div class="book-card">
+                <img src="/assets/Books/Alice's_Adventures_in_Wonderland.jpg" alt="Alice's Adventures in Wonderland">
+                <div class="content">
+                    <h3>Alice's Adventures in Wonderland</h3>
+                    <p>Lewis Carroll</p>
+                     <span class="genre">non-fiction</span> 
+                </div>
+            </div>
+    
+            <div class="book-card">
+                <img src="/assets/Books/Dracula.jpg" alt="Dracula">
+                <div class="content">
+                    <h3>Dracula</h3>
+                    <p>Bram Stoker</p>
+                    <span class="genre">non-fiction</span>
+                </div>
+            </div>
+    
+            <div class="book-card">
+                <img src="/assets/Books/Frankenstein.jpg" alt="Frankenstein">
+                <div class="content">
+                    <h3>Frankenstein</h3>
+                    <p>Mary Shelly</p>
+                    <span class="genre">mystery</span>
+                </div>
+            </div>
+    
+            <div class="book-card">
+                <img src="/assets/Books/Little_Women.jpg" alt="Little Women">
+                <div class="content">
+                    <h3>Little Women</h3>
+                    <p>Louisa May Alcott</p>
+                    <span class="genre">fantasy</span>
+                </div>
+            </div>
+    
+            <div class="book-card">
+                <img src="/assets/Books/Moby_Dick.jpg" alt="Moby Dick">
+                <div class="content">
+                    <h3>Moby Dick</h3>
+                    <p>Herman Melville</p>
+                    <span class="genre">fiction</span>
+                </div>
+            </div>
+        <!-- Books will be dynamically displayed here -->
+    </section>
+    <footer class="footer">
+        <p class="footer-text">Made with <i class='bx bxs-heart'></i> by NEUROSPARK</p>
+        <p class="footer-text">© 2025 AOT Library. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

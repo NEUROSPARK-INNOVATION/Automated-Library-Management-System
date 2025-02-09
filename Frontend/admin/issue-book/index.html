@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Issue Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Issue Form</h1>
+        <form id="bookIssueForm">
+            <div class="form-group">
+                <label for="memberName">Member Name:</label>
+                <input type="text" id="memberName" name="memberName" required>
+            </div>
+            <div class="form-group">
+                <label for="memberId">Member ID:</label>
+                <input type="text" id="memberId" name="memberId" required>
+            </div>
+            <div class="form-group">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="bookId">Book ID:</label>
+                <input type="text" id="bookId" name="bookId" required>
+            </div>
+            <div class="form-group">
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" name="issueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+            <button type="submit" id="issueButton">Issue Book</button>
+        </form>
+        
+    <script src="script.js"></script>
+</body>
+</html>
